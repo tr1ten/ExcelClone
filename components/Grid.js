@@ -6,21 +6,21 @@ import * as SecureStore from 'expo-secure-store';
 const styles = StyleSheet.create({
   grid: {
     flexDirection: 'column',
-    backgroundColor: 'lightgray',
+    backgroundColor: 'black',
   },
   row: {
     flexDirection: 'row',
   },
   cell: {
     borderWidth: 1,
-    borderColor: 'gray',
+    borderColor: 'brown',
     flex: 1,
     textAlign: 'center',
     padding: 4,
     backgroundColor: 'white',
   },
   headerCell: {
-    backgroundColor: 'lightgreen',
+    backgroundColor: 'pink',
     fontWeight: 'bold',
   },
   downloadButton: {
@@ -141,8 +141,12 @@ const Grid = () => {
   return (
     <View style={[styles.grid, { width: screenWidth }]}>
       {renderGrid()}
-      <Button title="Download" onPress={handleDownload} style={styles.downloadButton} />
-      <Button title="Reset" onPress={handleReset} style={styles.resetButton} />
+      <View style={
+        {display:"flex",flexDirection:"row",justifyContent:"space-evenly",padding:10,backgroundColor:"white"}
+      }>
+      <Button color={"green"} title="Download" onPress={handleDownload} style={styles.downloadButton} />
+      <Button color={"red"} title="Reset" onPress={handleReset} style={styles.resetButton} />
+      </View>
     </View>
   );
 };

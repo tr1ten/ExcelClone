@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "project",
+    "name": "Excel Clone",
     "slug": "project",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,15 +22,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.vansh12113097.project"
+      "package": "com.excelclone19821.project"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "a22303d5-4651-4518-8bab-4794cdc86dcf"
+        "projectId": "78067307-e8ab-4ba6-8412-1024b56bc37e"
       }
-    }
+    },
+    "owner": "shubhx1"
   }
 }
